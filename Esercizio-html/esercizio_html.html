@@ -10,13 +10,194 @@
         <nav>
             <img src="https://picsum.photos/100/100" alt="Il nostro Logo">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Notizie</a></li>
-                <li><a href="">Nostre Storie</a></li>
-                <li><a href="">Chi Siamo</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Notizie</a></li>
+                <li><a href="#">Nostre Storie</a></li>
+                <li><a href="#">Chi Siamo</a></li>
             </ul>
         </nav>
         <h1>Il Giornale</h1>
     </header>
+    
+    <main>
+        <section>
+            <h2>Articoli in evidenza</h2>
+            <article>
+                <h3>Titolo Articolo 1</h3>
+                <img src="https://picsum.photos/80/80" alt="">
+                <p>Lorem ipsum dolor sit amet, <em>consectetur adipiscing elit.</em> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <cite>Autore: Mario Rossi</cite>
+                <a href=""><i>leggi di più</i></a>    
+            </article>
+            <article>
+                <h3>Titolo Articolo 2</h3>
+                <img src="https://picsum.photos/81/81" alt="">
+                <p>Lorem ipsum dolor sit amet, <span><u>consectetur adipiscing elit.</u></span> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <cite>Autore: Mario Rossi</cite>
+                <a href=""><i>leggi di più</i></a>  
+                
+            </article>
+            <article>
+                <h3>Titolo Articolo 3</h3>
+                <img src="https://picsum.photos/82/82" alt="">
+                <p><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <cite>Autore: Mario Rossi</cite>
+                <a href=""><i>leggi di più</i></a> 
+            </article>
+        </section>
+        
+        <section>
+            <h2>Ricerca la Notizia</h2>
+            <p>Se hai persono le Notizie precedenti ricercala qui :</p>
+            <table>
+                <tr>
+                    <th>Lun</th>
+                    <th>Mar</th>
+                    <th>Mer</th>
+                    <th>Gio</th>
+                    <th>Ven</th>
+                    <th>Sab</th>
+                    <th>Dom</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+                    <td></td>
+                </tr>
+            </table>
+        </section>
+        
+        <section>
+            <h2>Scrivi Il tuo articolo</h2>
+            <form action="mailto:indirizzoemail@gmail.com">
+                <label for="country">Seleziona il Paese da cui scrivi:</label>
+                <select  name="country" id="country" required >
+                    <option disabled selected hidden> Seleziona il tuo paese</option>
+                    <optgroup label="Europa" > 
+                        <option value="it">Italia</option>
+                        <option value="fr">Francia</option>
+                        <option value="gr">Germania</option>
+                        <option value="sp">Spagna</option>
+                    </optgroup>
+                    <optgroup label="America">
+                        <option value="usa">Stati Uniti</option>
+                        <option value="can">Canada</option>
+                        <option value="bra">Brasile</option>
+                        <option value="arg">Argentina</option>
+                    </optgroup>
+                    <optgroup label="Asia">
+                        <option value="chi">Cina</option>
+                        <option value="ind">India</option>
+                        <option value="jp">Giappone</option>
+                    </optgroup>
+                    <optgroup label="Africa">
+                        <option value="eg">Egitto</option>
+                        <option value="za">Sudafrica</option>
+                    </optgroup>
+                    <optgroup label="Oceania">
+                        <option value="aus">Australia</option>
+                        <option value="nz">Nuova Zelanda</option>
+                    </optgroup>
+                </select>
+                <br>
+                <br>
+                <div>
+                    <label for="nome">Inserisci Il Tuo Nome:</label>
+                    <input id="nome" name="name" type="text" required placeholder="Inserisci il tuo nome">
+                </div>
+                <br>
+                
+                
+                <label for="cognome" >Inserisci Cognome:</label>
+                <input id="cognome" name="surname" type="text" required placeholder="Inserisci il tuo cognome">
+            </div>
+            <br>
+            <div>
+                <label for="age">Inserisci età:</label>
+                <input id="age" name="age" type="number" required placeholder="Inserisci età" >
+            </div>
+            <br>
+            <div>
+                <label for="message">Scrivi Articolo:</label>
+                <textarea id="message" name="message" required placeholder="Inserisci Il tuo articolo"></textarea>
+            </div>
+            <br>
+            <div>
+                <label for="email">Inserisci Email:</label>
+                <input id="email" name="email" type="email" required placeholder="Inserisci la tua email">
+            </div>
+            <br>
+            <div>
+                <button type="submit" value="Scrivici">Pubblica Articolo</button>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <section>
+            <address>
+                Contatti: 123-456-7890 |
+                Email: indirizzoemail@gmail.com
+                Via: Roma, 00
+                Città: Roma
+                
+            </address>
+        </section>
+        
+        <section>
+            <h3>Link Utili</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chi siamo</a></li>
+                <li><a href="#">Notizie</a></li>
+                <li><a href="#">Nostre Storie</a></li>
+            </ul>
+        </section>
+            
+            <p> © 2024 Il Giornale. Tutti i diritti riservati.</p>
+        </footer>
+    </main>
 </body>
 </html>
