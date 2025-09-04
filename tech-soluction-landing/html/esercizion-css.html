@@ -3,11 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech-support</title>
-    <link rel="stylesheet" href="../../lezione-css/css/style.css">
+    <title>Technical-support</title>
+    <link rel="stylesheet" href="../../tech-soluction-landing/css/style.css">
 </head>
 <body>
-    <h1>Ciaoo</h1>
-    <button>Click Me!</button>
+<!-- Header -->
+<header>
+    <!-- logo -->
+    <h1 class="logo">Tech Solutions</h1>
+<!-- navbar -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#servizi">Servizi</a></li>
+            <li><a href="#chi-siamo">Chi Siamo</a></li>
+            <li><a href="#contatti">Contatti</a></li>
+        </ul>
+    </nav>
+<!-- fine navbar -->
+</header>
+<!-- fine header -->
+
+<!-- Main Content -->
+<main>
+    <!-- hero-section -->
+    <section id="hero">
+        <h2>Soluzioni Tecnologiche per il Tuo Business</h2>
+        <p>Offriamo supporto tecnico e consulenza per aziende di tutte le dimensioni.</p>
+        <button class="cta-btn">Scopri i nostri servizi</button>
+    </section>
+    <!-- fine hero-section -->
+    <!-- servizi-section -->
+    <section id="servizi">
+
+        <h2>I Nostri Servizi</h2>
+    <!--servizi-grid -->
+        <div class="servizi-grid">
+            <div class="servizio">
+                <img src="../img/laptop.png" alt="Laptop">
+                <h3>Consulenza IT</h3>
+                <p>Supporto tecnico e strategico per la tua azienda.</p>
+            </div>
+
+            <div class="servizio">
+                <img src="../img/worldwide.png" alt="Sviluppo Web">
+                <h3>Sviluppo Web</h3>
+                <p>Realizzazione di siti web moderni e performanti.</p>
+            </div>
+
+            <div class="servizio">
+                <img src="../img/lock.png" alt="Cybersecurity">
+                <h3>Cybersecurity</h3>
+                <p>Protezione dei tuoi dati e delle tue infrastrutture digitali.</p>
+            </div>
+        </div>
+    <!-- fine servizi-grid -->
+    </section>
+    <!-- chi-siamo-section -->
+    <section id="chi_siamo">
+        <div class="chi_siamo_txt"><h2>Chi Siamo</h2>
+        <p>Tech Solutions è un'azienda leader nel settore della tecnologia, con anni di esperienza nel fornire soluzioni innovative per le aziende.</p></div>
+        <div class="chi_siamo_img">
+        </div>
+    </section>
+    <!-- contatti-section -->
+    <section id="contatti">
+        <h2>Contattaci</h2>
+            <form action="mailto:indirizzoemail@gmail.com" >
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Inserisci il tuo nome" >
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required  placeholder="Inserisci la tua email">
+
+                <label for="messaggio">Messaggio:</label>
+                <textarea id="messaggio" name="messaggio" rows="5" required placeholder="Inserisci il tuo messaggio"></textarea>
+
+                <button class="cta-btn" type="submit">Invia</button>
+            </form>
+    </section>
+</main>
+<!-- fine main content -->
+<!-- Footer -->
+    <footer>
+
+        <div class="footer_top_sections">
+
+            <section class="indirizzi" > 
+
+            <h3>Indirizzi</h3>
+
+            <address>
+                <span>Contatti: 123-456-7890</span>
+                <span>Email: indirizzoemail@gmail.com</span>
+                <span>Via: Roma, 00</span>
+                <span>Città: Roma</span>                
+            </address>
+        </section>
+
+        <section class="link-utili">
+
+            <h3>Link Utili</h3>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chi siamo</a></li>
+                <li><a href="#">Servizi</a></li>
+                <li><a href="#">Contatti</a></li>
+            </ul>
+
+        </section>
+
+        <section class="social">
+            <h3>Seguici sui Social</h3>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+        </section>
+
+        </div>
+
+        <div class="footer_bottom_section">
+
+            <p>&copy; 2025 Tech Solutions - Tutti i diritti riservati</p>
+
+        </div>
+        
+    </footer>
+<!-- fine footer -->
+<script src="https://kit.fontawesome.com/2b8422c872.js" crossorigin="anonymous"></script>
 </body>
-</html>
+</html>     
