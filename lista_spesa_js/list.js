@@ -23,4 +23,3 @@ function addItem(){
     input.value = ""
     }
 }
-

@@ -1,0 +1,28 @@
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
+.card_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+   background-color: rgb(131, 8, 69);
+   gap: 25px;
+   padding: 15px;
+}
+
+.card{
+    background-color: beige;
+    height: 250px;
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    padding: 9px;
+    border: 2px solid black;
+}
+.card img{
+    width: 80%;
+}
