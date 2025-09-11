@@ -19,7 +19,7 @@ const productCatalog = [
 const cart= []
 
 let cardWrapper = document.querySelector('.card_wrapper')
-
+let cartWrapper = document.querySelector('.cart_wrapper');
 for(let product of productCatalog){
     
     let card = document.createElement('div');
@@ -33,6 +33,36 @@ for(let product of productCatalog){
     `
     
     cardWrapper.appendChild(card)
+   let button = card.querySelector("button[data-id]");
+
+    button.addEventListener('click', () => {
+        let id = button.getAttribute("data-id");
+    console.log('Aggiunto al carrello', id);
+
+    // trovo il prodotto
+    let prodottoSelezionato = null;
+    for (let i = 0; i < productCatalog.length; i++) {
+        if (productCatalog[i].id == id) {
+            prodottoSelezionato = productCatalog[i];
+            break;
+        }
+    }
+
+    if (prodottoSelezionato) {
+        cart.push(prodottoSelezionato);
+
+        // creo una nuova card per il carrello
+        let cartCard = document.createElement('div');
+        cartCard.classList.add('card');
+        cartCard.innerHTML = `
+            <img src="${prodottoSelezionato.imageUrl}" alt="${prodottoSelezionato.name}" width="100">
+            <h4>${prodottoSelezionato.name}</h4>
+            <p>${prodottoSelezionato.price} €</p>
+        `;
+
+        cartWrapper.appendChild(cartCard);
+    }
+    });
 
 }
 
